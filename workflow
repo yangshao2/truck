@@ -18,7 +18,7 @@ yolo detect train \
 #prediction
 yolo detect predict \
   model=/home/yshao/truck/runs/detect/depot_project/v8_detection_baseline3/weights/best.pt \
-  source=./data/processed/c_09270952_06_10500_4bd_2022_tiles \
+  source=./data/processed/e_05191050_06_09600_4bd_2021_tiles \
   conf=0.25 \
   save_txt=True \
   save_conf=False \
