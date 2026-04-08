@@ -2,6 +2,19 @@
 conda activate samgeo_env
 python jp2_to_tiles.py
 
+#train
+yolo detect train \
+  model=yolov8n.pt \
+  data=data.yaml \
+  epochs=100 \
+  imgsz=640 \
+  batch=16 \
+  device=0 \
+  project=depot_project \
+  name=v8_detection_baseline
+
+
+
 #prediction
 yolo detect predict \
   model=/home/yshao/truck/runs/detect/depot_project/v8_detection_baseline2/weights/best.pt \
